@@ -3,7 +3,7 @@ const options = {
     method: 'GET', // Método de la petición (GET)
     headers: {
         accept: 'application/json', // Tipo de respuesta esperada (JSON)
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYTJjYTAwZDYxZWIzOTEyYjZlNzc4MDA4YWQ3ZmNjOCIsInN1YiI6IjYyODJmNmYwMTQ5NTY1MDA2NmI1NjlhYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4MJSPDJhhpbHHJyNYBtH_uCZh4o0e3xGhZpcBIDy-Y8'
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMDNkOWEyY2YzMWM4Njc0NGI3ZTc1YTgzMGI5YmVkMSIsInN1YiI6IjY2NTRhMDgzYmVmMDgxNzExNTA2YjBmYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.y4NM_fEdsxO8udZHJh1Kc-w1L7ZuX4--_q0JLY1ENj4'
 
     }
 };
