@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <!-- fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>CAC-MOVIES</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <a href="#" class="anclaLogo">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CAC-Movies</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a href="#tendencias" class="linkNav">Tendencias</a></li>
+                <li class="listaItem"><a href="./pages/registrarse.html" class="linkNav">Registrarse</a></li>
+                <li class="listaItem"><a href="./pages/iniciarsesion.html" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
+                <li class="listaItem"><a href="./pages/conexionAPI.html" class="linkNav iniciarSesion">Conexión API</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="main">
+        <!-- SECCION PRINCIPAL -->
+        <section class="sectionPrincipal" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="tituloPrincipal">Películas y series ilimitadas <br> en un solo lugar</h1>
+            <h2 class="subtituloPrincipal">Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
+            <a class="botonRegistrarse" href="./pages/registrarse.html">Registrarse</a>
+        </section>
+        <!-- BUSCADOR PRINCIPAL -->
+        <section class="buscadorPrincipal" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50"
+            data-aos-duration="1000">
+            <h2 class="tituloSection">¿Qué estás buscando para ver?</h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar...">
+                <input class="botonBuscador" type="submit" value="Buscar">
+            </form>
+        </section>
+        <hr>
+        <!-- PELICULAS TENDENCIAS -->
+        <section id="tendencias" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000"
+            class="peliculasTendencia">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas" id="tendenciasContainer">
+                <!-- Aca se agregaran las películas usando la APId -->
+            </div>
+            <button class="boton anterior" id="botonAnterior">Anterior</button>
+            <button class="boton siguiente" id="botonSiguiente">Siguiente</button>
+        </section>
+        <hr>
+        <section class="peliculasAclamadas" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+            data-aos-duration="2000">
+            <h3 class="tituloSection">Las mas aclamadas</h3>
+            <div class="aclamadas" id="aclamadasContainer">
+                <!-- Aquí se cargarán las películas más aclamadas -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Películas</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Fetch películas de un servidor de APIs y las crea en DOM -->
+    <script src="./js/cargarPeliculas.js"></script>
+</body>
+
+</html>
