@@ -28,15 +28,6 @@ const cargarPeliculasAclamadas = async () => {
     });
 };
 
-
-// // Ejecutamos las funciones de carga de películas al cargar la página
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Cargamos las películas en la cuadrícula de tendencias
-//     cargarPeliculasTendencia();
-//     // Cargamos las películas en el carrusel de películas aclamadas
-//     cargarPeliculasAclamadas();
-// });
-
 const options = {
     method: 'GET',
     headers: {
