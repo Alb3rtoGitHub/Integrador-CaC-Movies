@@ -126,14 +126,20 @@ body {
 }
 
 .container {
-    th, td {
+
+    th,
+    td {
         background-color: #181419 !important;
         color: #CCD0CF !important;
     }
+
     margin-bottom: 15vh;
 }
 
 .cajaRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: content-box;
     margin: 10px auto;
     padding: 20px 20px;
@@ -149,16 +155,16 @@ body {
         padding: 10px;
         border: #9F3647;
         border-radius: 6px;
-        
+
         /* Agregar efecto de botón presionado */
         transition: transform 0.3s, box-shadow 0.3s;
-        
+
         &:hover {
             transform: scale(0.95);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             background-color: #9F3647 !important;
-            }
+        }
     }
 }
 
