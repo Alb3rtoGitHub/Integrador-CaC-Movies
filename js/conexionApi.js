@@ -34,7 +34,7 @@ function renderPeliculas(response) {
         `
     }
     let listaPeliculas = `
-        <h1 class="text-center p-2 bg-info fs-3 mb-3 bg-dark text-white">Listado Juegos</h1>
+        <h1 class="text-center p-2 bg-info fs-3 mb-3 bg-dark text-white">Listado de Películas</h1>
     `
     let encabezado = `
             <tr>
